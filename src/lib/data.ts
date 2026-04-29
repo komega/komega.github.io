@@ -4,7 +4,7 @@ export const personalInfo = {
     address: "Hưng Đạo, Hà Nội",
     phone: "0967670802",
     email: "nvkhoa05@gmail.com",
-    github: "https://komega.github.io"
+    github: "https://github.com/komega"
 };
 
 export const objective = "Tôi mong muốn đóng góp khả năng phân tích và phát triển phần mềm để xây dựng những tính năng đột phá, giúp tối ưu hóa quy trình vận hành và nâng cao giá trị cạnh tranh cho sản phẩm của công ty.";
