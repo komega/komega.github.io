@@ -65,7 +65,7 @@
 	<title>{personalInfo.name} - {personalInfo.title}</title>
 </svelte:head>
 
-<main class="min-h-screen bg-gray-50 dark:bg-gray-950 duration-300 py-10 px-4 sm:px-6 lg:px-8">
+<main class="min-h-screen bg-gray-50 dark:bg-gray-950 py-10 px-4 sm:px-6 lg:px-8">
 	<!-- Theme Toggle -->
 	<div class="fixed top-4 right-4 z-50 flex bg-white dark:bg-gray-800 shadow-lg rounded-full p-1 border border-gray-200 dark:border-gray-700">
 		<button 
@@ -91,7 +91,7 @@
 		</button>
 	</div>
 
-	<div class="max-w-5xl mx-auto bg-white dark:bg-gray-900 shadow-xl rounded-2xl overflow-hidden duration-300" data-aos="fade-up">
+	<div class="max-w-6xl mx-auto bg-white dark:bg-gray-900 shadow-xl rounded-2xl overflow-hidden duration-300" data-aos="fade-up">
 		<!-- Header -->
 		<header class="bg-blue-700 dark:bg-blue-800 text-white p-8 md:p-12 flex flex-col md:flex-row justify-between gap-8">
 			<!-- Left Side: Image, Name, Title -->

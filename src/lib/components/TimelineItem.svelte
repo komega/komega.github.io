@@ -12,7 +12,7 @@
 	}>();
 </script>
 
-<div class="flex flex-col md:flex-row gap-4 group">
+<div class="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12 group">
 	<div class="md:w-1/4 flex-shrink-0">
 		<span class="inline-block bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
 			{time}
