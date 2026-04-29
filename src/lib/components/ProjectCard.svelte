@@ -16,7 +16,7 @@
 	href={link}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="block border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all duration-300 bg-white dark:bg-gray-800/40 hover:bg-gray-50 dark:hover:bg-gray-800"
+	class="block border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg bg-white dark:bg-gray-800/40 hover:bg-gray-50 dark:hover:bg-gray-800"
 >
 	<h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">{name}</h3>
 	<p class="text-gray-600 dark:text-gray-400 mb-4 flex items-center gap-2">

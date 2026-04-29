@@ -74,7 +74,7 @@ export const activities = [
     {
         time: "2021 - 2026",
         organization: "Trung tâm Nghiên cứu và Phát triển Samsung Việt Nam (SRV)",
-        role: "Kỹ sư phần mềm",
+        role: "Nhà phát triển Android",
         tasks: [
             "Tham gia câu lạc bộ Gym.",
             "Tham gia giải thể thao điện tử."

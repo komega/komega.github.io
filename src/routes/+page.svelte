@@ -65,33 +65,33 @@
 	<title>{personalInfo.name} - {personalInfo.title}</title>
 </svelte:head>
 
-<main class="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-300 py-10 px-4 sm:px-6 lg:px-8">
+<main class="min-h-screen bg-gray-50 dark:bg-gray-950 duration-300 py-10 px-4 sm:px-6 lg:px-8">
 	<!-- Theme Toggle -->
 	<div class="fixed top-4 right-4 z-50 flex bg-white dark:bg-gray-800 shadow-lg rounded-full p-1 border border-gray-200 dark:border-gray-700">
 		<button 
 			onclick={() => applyTheme('light')}
-			class="p-2 rounded-full transition-all {theme === 'light' ? 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}"
+			class="p-2 rounded-full {theme === 'light' ? 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}"
 			title="Light Mode"
 		>
 			<Sun size={20} />
 		</button>
 		<button 
 			onclick={() => applyTheme('dark')}
-			class="p-2 rounded-full transition-all {theme === 'dark' ? 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}"
+			class="p-2 rounded-full {theme === 'dark' ? 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}"
 			title="Dark Mode"
 		>
 			<Moon size={20} />
 		</button>
 		<button 
 			onclick={() => applyTheme('system')}
-			class="p-2 rounded-full transition-all {theme === 'system' ? 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}"
+			class="p-2 rounded-full {theme === 'system' ? 'bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}"
 			title="System Theme"
 		>
 			<Monitor size={20} />
 		</button>
 	</div>
 
-	<div class="max-w-5xl mx-auto bg-white dark:bg-gray-900 shadow-xl rounded-2xl overflow-hidden transition-colors duration-300" data-aos="fade-up">
+	<div class="max-w-5xl mx-auto bg-white dark:bg-gray-900 shadow-xl rounded-2xl overflow-hidden duration-300" data-aos="fade-up">
 		<!-- Header -->
 		<header class="bg-blue-700 dark:bg-blue-800 text-white p-8 md:p-12 flex flex-col md:flex-row justify-between gap-8">
 			<!-- Left Side: Image, Name, Title -->
@@ -106,20 +106,20 @@
 			<!-- Right Side: Contact Info -->
 			<div class="flex flex-col gap-3 text-sm md:text-base" data-aos="fade-up">
 				<div class="flex items-center justify-start gap-3 group">
-					<svg class="w-5 h-5 flex-shrink-0 transition-colors group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+					<svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
 					<span>{personalInfo.address}</span>
 				</div>
 				<div class="flex items-center justify-start gap-3 group">
-					<svg class="w-5 h-5 flex-shrink-0 transition-colors group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+					<svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
 					<span>{personalInfo.phone}</span>
 				</div>
 				<div class="flex items-center justify-start gap-3 group">
-					<svg class="w-5 h-5 flex-shrink-0 transition-colors group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-					<a href="mailto:{personalInfo.email}" class="hover:underline hover:text-blue-200 transition-colors">{personalInfo.email}</a>
+					<svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+					<a href="mailto:{personalInfo.email}" class="hover:underline">{personalInfo.email}</a>
 				</div>
 				<div class="flex items-center justify-start gap-3 group">
-					<svg class="w-5 h-5 flex-shrink-0 transition-colors group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-					<a href={personalInfo.github} target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-blue-200 transition-colors">{personalInfo.github}</a>
+					<svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+					<a href={personalInfo.github} target="_blank" rel="noopener noreferrer" class="hover:underline">{personalInfo.github}</a>
 				</div>
 			</div>
 		</header>
@@ -133,11 +133,11 @@
 					<div data-aos="fade-up">
 						<Section title="Học vấn">
 							<div class="space-y-10">
-								{#each education as edu (edu.major)}
+								{#each education as edu (edu.time)}
 									<TimelineItem
 										time={edu.time}
-										title={edu.major}
-										subtitle={edu.school}
+										title={edu.school}
+										subtitle={edu.major}
 										tasks={edu.achievements}
 									/>
 								{/each}
@@ -152,8 +152,8 @@
 								{#each experience as exp (exp.time)}
 									<TimelineItem
 										time={exp.time}
-										title={exp.position}
-										subtitle={exp.company}
+										title={exp.company}
+										subtitle={exp.position}
 										tasks={exp.tasks}
 									/>
 								{/each}
@@ -166,9 +166,9 @@
 						<Section title="Hoạt động">
 							<div class="space-y-8">
 								{#each activities as act (act.role)}
-									<div class="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all">
-										<h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">{act.role}</h3>
-										<p class="text-blue-600 dark:text-blue-400 font-medium mb-3">{act.organization} | {act.time}</p>
+									<div class="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg border border-gray-100 dark:border-gray-700 hover:shadow-md">
+										<h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">{act.organization}</h3>
+										<p class="text-blue-600 dark:text-blue-400 font-medium mb-3">{act.time} | {act.role}</p>
 										<ul class="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1">
 											{#each act.tasks as task (task)}
 												<li>{task}</li>
@@ -208,7 +208,7 @@
 						<Section title="Chứng chỉ">
 							<ul class="list-disc list-inside space-y-3">
 								{#each certificates as cert (cert)}
-									<li class="text-gray-700 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default">{cert}</li>
+									<li class="text-gray-700 dark:text-gray-400 cursor-default">{cert}</li>
 								{/each}
 							</ul>
 						</Section>
@@ -235,7 +235,7 @@
 						<Section title="Sở thích">
 							<div class="flex flex-wrap gap-2">
 								{#each hobbies as hobby (hobby)}
-									<span class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg font-medium hover:bg-blue-100 dark:hover:bg-blue-900/50 hover:text-blue-700 dark:hover:text-blue-300 transition-colors cursor-default">
+									<span class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg font-medium cursor-default">
 										{hobby}
 									</span>
 								{/each}
@@ -248,7 +248,7 @@
 						<Section title="Thông tin thêm">
 							<ul class="list-none space-y-4">
 								{#each additionalInfo as info (info)}
-									<li class="flex items-start gap-3 text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg border border-transparent hover:border-blue-200 dark:hover:border-blue-800 transition-all shadow-sm">
+									<li class="flex items-start gap-3 text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg border border-transparent shadow-sm">
 										<svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
 										<span>{info}</span>
 									</li>
