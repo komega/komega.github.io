@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	let {
 		name,
 		score
@@ -6,6 +8,15 @@
 		name: string;
 		score: number;
 	}>();
+
+	let width = $state(0);
+
+	onMount(() => {
+		const timer = setTimeout(() => {
+			width = score * 10;
+		}, 100);
+		return () => clearTimeout(timer);
+	});
 </script>
 
 <div class="mb-4 group">
@@ -15,8 +26,8 @@
 	</div>
 	<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
 		<div
-			class="bg-blue-600 dark:bg-blue-500 h-2.5 rounded-full"
-			style="width: {score * 10}%"
+			class="bg-blue-600 dark:bg-blue-500 h-2.5 rounded-full duration-500"
+			style="width: {width}%"
 		></div>
 	</div>
 </div>
